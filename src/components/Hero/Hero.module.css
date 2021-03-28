@@ -1,0 +1,104 @@
+/*
+=============== 
+Hero
+===============
+*/
+/* underline added to globals */
+.Hero {
+  margin-top: -2rem;
+  padding-top: 5rem;
+  height: 80vh;
+  /* background: var(--clr-primary-5); */
+  position: relative;
+}
+
+.HeroCenter {
+  height: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.Hero .Underline {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+/* .HeroInfo {
+  background: var(--clr-primary-5);
+} */
+.HeroImg {
+  display: none;
+}
+.HeroInfo h4 {
+  color: var(--clr-grey-5);
+}
+.HeroIcons {
+  justify-items: flex-start;
+}
+.Hero .Btn {
+  margin-top: 1.25rem;
+}
+
+@media screen and (min-width: 992px) {
+  .Hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 65%;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-white);
+  }
+  .HeroCenter {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .Hero h4 {
+    font-size: 0.85rem;
+  }
+  .HeroInfo {
+    grid-row: 1/1;
+    grid-column: 1 / span 8;
+  }
+  .HeroImg {
+    display: block;
+    grid-row: 1/1;
+    grid-column: 6/-1;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .Hero h4 {
+    font-size: 1rem;
+  }
+
+  .HeroInfo {
+    grid-column: 1 / span 8;
+  }
+
+  .Hero h4 {
+    line-height: 1;
+  }
+}
+
+/* section */
+.Section {
+  padding: 5rem 0;
+}
+
+.SectionCenter {
+  width: 90vw;
+  margin: 1rem auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .SectionCenter {
+    width: 95vw;
+  }
+}
+.Underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}

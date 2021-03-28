@@ -1,0 +1,25 @@
+.Footer {
+  height: 9rem;
+  background: #222;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+.Footer h4 {
+  margin-top: 0.5rem;
+  color: var(--clr-white);
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.Footer h4 span {
+  color: var(--clr-primary-5);
+}
+.FooterLinks {
+  margin: 0 auto 1rem auto;
+}
+.Footer .socialLink {
+  color: var(--clr-white);
+}
+.Footer .socialLink:hover {
+  color: var(--clr-primary-5);
+}
