@@ -14,12 +14,3 @@
 .Footer h4 span {
   color: var(--clr-primary-5);
 }
-.FooterLinks {
-  margin: 0 auto 1rem auto;
-}
-.Footer .socialLink {
-  color: var(--clr-white);
-}
-.Footer .socialLink:hover {
-  color: var(--clr-primary-5);
-}

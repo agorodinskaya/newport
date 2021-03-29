@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className={classes.Footer}>
       <div>
-        <SocialLinks className={classes.FooterLinks}></SocialLinks>
+        <SocialLinks className={classes.socialLink}></SocialLinks>
         <h4>
-          copyright&copy;{new Date().getFullYear()}
-          <span> nastyadev </span> all rights reserved
+          &copy;{new Date().getFullYear()}
+          <span> nastyadev </span>
         </h4>
       </div>
     </footer>

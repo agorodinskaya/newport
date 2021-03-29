@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaTwitterSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const data = [
   {
