@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { graphql, useStaticQuery } from "gatsby";
-
+import Langs from "../constants/langs";
 import Image from "gatsby-image";
 // import SEO from "../components/SEO";
 const query = graphql`
@@ -42,6 +42,8 @@ const About = () => {
                 allow me to dive in the real world projects.
               </p>
             </div>
+            <p>Here are some technologies/ tools I use :</p>
+            <Langs className='langs'></Langs>
           </article>
         </div>
       </section>
