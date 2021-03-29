@@ -721,6 +721,7 @@ About Page
 .about-img {
   margin-bottom: 2rem;
   height: 25rem;
+  box-shadow: var(--dark-shadow);
 }
 .about-text .section-title {
   margin-bottom: 2rem;

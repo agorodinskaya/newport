@@ -42,7 +42,7 @@ Hero
   .Hero::before {
     content: "";
     position: absolute;
-    top: 25%;
+    top: 21%;
     left: 55%;
     right: 1%;
     bottom: 0%;
@@ -55,6 +55,7 @@ Hero
     transform-origin: top left;
     /* animation: hero-animation 30s ease infinite; */
     /* border-radius: 50%; */
+    box-shadow: var(--dark-shadow);
   }
   .HeroCenter {
     grid-template-columns: repeat(12, 1fr);
@@ -71,8 +72,10 @@ Hero
     display: block;
     grid-row: 1/1;
     grid-column: 6/-1;
-    /* border-radius: 50%; */
+    box-shadow: var(--dark-shadow);
     bottom: 7%;
+    left: 0%;
+    width: 90%;
   }
   /* @keyframes hero-animation {
     0% {

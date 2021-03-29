@@ -28,7 +28,7 @@ const Hero = () => {
         <article className={classes.HeroInfo}>
           <div className={classes.Underline}></div>
           <div>
-            <h1>I'm ana</h1>
+            <h1>Hi,I'm Ana</h1>
             <h4>I am a web developer</h4>
             <Link to='/about' className='btn'>
               About me
