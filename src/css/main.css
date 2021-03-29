@@ -48,12 +48,12 @@ Variables
   --max-width: 1170px;
   --fixed-width: 700px;
   --gradient: linear-gradient(
-    90deg,
-    #c316f7ef,
-    #ee0987,
-    #861dfd96,
-    #4e1dfd71,
-    #e462f5c6
+    40deg,
+    hsl(251, 84%, 70%),
+    hsl(302, 88%, 70%),
+    hsl(251, 81%, 70%),
+    hsl(255, 77%, 70%),
+    hsl(302, 88%, 70%)
   );
 }
 /*
@@ -71,7 +71,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
+  /* background: var(--clr-gre) */
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.975rem;

@@ -43,7 +43,7 @@
   }
   .navLinks a {
     text-transform: capitalize;
-    color: var(--clr-grey-1);
+    color: var(--clr-grey-2);
     font-weight: bold;
     letter-spacing: var(--spacing);
     transition: var(--transition);
