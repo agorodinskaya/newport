@@ -41,7 +41,7 @@ const Navbar = () => {
               const { id, url, text } = link;
               return (
                 <li key={id}>
-                  <Link className={classes.Anchor} href={url}>
+                  <Link className={classes.Anchor} to={url}>
                     {text}
                   </Link>
                 </li>
