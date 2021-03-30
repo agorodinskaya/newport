@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={classes.Footer}>
       <div>
-        <SocialLinks className={classes.socialLink}></SocialLinks>
+        <SocialLinks></SocialLinks>
         <h4>
           &copy;{new Date().getFullYear()}
           <span> nastyadev </span>
