@@ -23,7 +23,7 @@
   color: var(--clr-primary-2);
 }
 .navLinks {
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: var(--ff-primary);
 }
 
@@ -38,7 +38,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
   }
   .toggleBtn {
     display: none;

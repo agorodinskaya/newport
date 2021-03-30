@@ -448,12 +448,13 @@ Pages
 */
 
 .projects-page,
+.main-page,
 .blog-page,
 .error-page,
 .about-page,
 .contact-page {
   background: var(--clr-grey-8);
-  min-height: calc(100vh - 5rem);
+  min-height: calc(100vh - 5rem - 11.5rem);
 }
 .error-page {
   display: grid;
@@ -476,7 +477,6 @@ Pages
   box-shadow: var(--dark-shadow);
   border-radius: 20%;
 }
-
 
 .about-text .section-title {
   margin-bottom: 2rem;

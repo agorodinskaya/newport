@@ -5,11 +5,11 @@ import "../css/main.css";
 // markup
 const IndexPage = () => {
   return (
-    <div>
-      <Layout>
+    <Layout>
+      <div className='main-page'>
         <Hero />
-      </Layout>
-    </div>
+      </div>
+    </Layout>
   );
 };
 

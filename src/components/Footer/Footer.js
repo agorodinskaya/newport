@@ -10,6 +10,7 @@ const Footer = () => {
           &copy;{new Date().getFullYear()}
           <span> nastyadev </span>
         </h4>
+        <h4>built with Gatsby</h4>
       </div>
     </footer>
   );
