@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
-import * as classes from "./nav.module.css";
+import * as classes from "../../components/NavBar/nav.module.css";
 import { links } from "../../constants/links";
 import { Link } from "gatsby";
 // console.log(classes);

@@ -1,7 +1,7 @@
 .navCenter {
   width: 90vw;
   max-width: 1170px;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
 }
 .navHeader {
   display: flex;
