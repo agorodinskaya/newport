@@ -23,13 +23,30 @@
   color: var(--clr-primary-2);
 }
 .navLinks {
-  /* overflow: hidden; */
+  overflow: hidden;
   font-family: var(--ff-primary);
 }
-
+.Anchor .Active {
+  color: var(--clr-primary-5);
+}
 .Logo .Two {
   color: var(--clr-primary-5);
 }
+.ShowLinks {
+  height: 23.9375rem;
+}
+.Anchor {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: var(--clr-grey-2);
+  letter-spacing: var(--spacing);
+  padding: 1rem 0;
+  border-top: 1px solid var(--grey-1);
+  transition: var(--transition);
+}
+
 @media screen and (min-width: 768px) {
   .linksContainer {
     height: auto !important;

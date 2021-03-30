@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
-import * as classes from "./Nav.module.css";
+import * as classes from "./nav.module.css";
 import { links } from "../../constants/links";
 import { Link } from "gatsby";
 // console.log(classes);
@@ -35,13 +35,20 @@ const Navbar = () => {
             <FaBars />
           </button>
         </div>
-        <div className={classes.linksContainer} ref={linksContainerRef}>
+        <div
+          className={`${classes.linksContainer} ${classes.ShowLinks}`}
+          ref={linksContainerRef}
+        >
           <ul className={classes.navLinks} ref={linksRef}>
             {links.map((link) => {
               const { id, url, text } = link;
               return (
                 <li key={id}>
-                  <Link className={classes.Anchor} to={url}>
+                  <Link
+                    className={classes.Anchor}
+                    activeClassName={classes.Active}
+                    to={url}
+                  >
                     {text}
                   </Link>
                 </li>
