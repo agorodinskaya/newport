@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import Langs from "../constants/langs";
 import Image from "gatsby-image";
 // import SEO from "../components/SEO";
+import "../css/main.css";
 const query = graphql`
   {
     file(relativePath: { eq: "AG.jpg" }) {
@@ -23,7 +24,6 @@ const About = () => {
   } = useStaticQuery(query);
   return (
     <Layout>
-      {/* <SEO title='About Me' description='about webdev' /> */}
       <section className='about-page'>
         <div className='section-center about-center'>
           <Image fluid={fluid} className='about-img' />

@@ -8,7 +8,7 @@ Hero
   margin-top: -2rem;
   padding-top: 10rem;
   height: 78vh;
-  background: var(--clr-grey-9);
+  background: var(--clr-grey-8);
   position: relative;
 }
 
@@ -53,9 +53,10 @@ Hero
     background-image: var(--gradient);
     transform: skewY(-13deg);
     transform-origin: top left;
-    /* animation: hero-animation 30s ease infinite; */
+    animation: hero-animation 30s ease infinite;
     /* border-radius: 50%; */
     box-shadow: var(--dark-shadow);
+    border-radius: 10%;
   }
   .HeroCenter {
     grid-template-columns: repeat(12, 1fr);
@@ -75,20 +76,21 @@ Hero
     box-shadow: var(--dark-shadow);
     bottom: 7%;
     left: 0%;
-    width: 90%;
+    width: 80%;
+    border-radius: 20%;
   }
-  /* @keyframes hero-animation {
+  @keyframes hero-animation {
     0% {
       background-position: 0% 30%;
     }
 
     50% {
-      background-position: 100% 50%;
+      background-position: 0% 50%;
     }
     100% {
       background-position: 100% 0%;
     }
-  } */
+  }
 }
 @media screen and (min-width: 1170px) {
   .Hero h4 {

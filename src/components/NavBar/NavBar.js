@@ -1,12 +1,27 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaAlignRight } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import * as classes from "./Nav.module.css";
-import PageLinks from "../../constants/links";
+import { links } from "../../constants/links";
+import { Link } from "gatsby";
 // console.log(classes);
 const Navbar = () => {
-  const [show, setShow] = useState(false);
+  const [showLinks, setShowLinks] = useState(false);
+  const linksContainerRef = useRef(null);
+  const linksRef = useRef(null);
+  const toggleLinks = () => {
+    setShowLinks(!showLinks);
+  };
+  useEffect(() => {
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if (showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = "0px";
+    }
+  }, [showLinks]);
+
   return (
-    <nav className={classes.navBar}>
+    <nav>
       <div className={classes.navCenter}>
         <div className={classes.navHeader}>
           <h3 className={classes.Logo}>
@@ -15,12 +30,25 @@ const Navbar = () => {
           <button
             type='button'
             className={classes.toggleBtn}
-            onClick={() => setShow(!show)}
+            onClick={toggleLinks}
           >
-            <FaAlignRight></FaAlignRight>
+            <FaBars />
           </button>
         </div>
-        <PageLinks className={classes.navLinks}></PageLinks>
+        <div className={classes.linksContainer} ref={linksContainerRef}>
+          <ul className={classes.navLinks} ref={linksRef}>
+            {links.map((link) => {
+              const { id, url, text } = link;
+              return (
+                <li key={id}>
+                  <Link className={classes.Anchor} href={url}>
+                    {text}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </nav>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 import {
   DiCss3,
   DiHtml5,
@@ -73,7 +72,7 @@ const data = [
 const langs = data.map((lang) => {
   return (
     <li key={lang.id}>
-      <a href={lang.url} className='langs'>
+      <a href={lang.url} className='anchor'>
         {lang.icon}
       </a>
     </li>

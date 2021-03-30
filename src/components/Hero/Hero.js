@@ -3,7 +3,7 @@ import Image from "gatsby-image";
 import * as classes from "./Hero.module.css";
 import { Link } from "gatsby";
 import { graphql, useStaticQuery } from "gatsby";
-import SocialLinks from "../../constants/sociallinks";
+
 const query = graphql`
   {
     file(relativePath: { eq: "AG.jpg" }) {
