@@ -7,17 +7,17 @@ Hero
 .Hero {
   margin-top: 2.2rem;
   padding-top: 10rem;
-  height: 71.5vh;
+  height: 73.5vh;
   background: var(--clr-grey-8);
   position: relative;
-  /* padding: 7rem 0; */
+  padding: 7rem 0;
 }
 
 .HeroCenter {
   height: 100%;
   display: grid;
   align-items: center;
-  padding: 7rem 0;
+  /* padding: 7rem 0; */
 }
 
 .Hero .Underline {

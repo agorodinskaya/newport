@@ -1,6 +1,6 @@
 import React from "react";
-import * as classes from "../../components/Footer/footer.module.css";
-import SocialLinks from "../../constants/sociallinks";
+import * as classes from "./footer.module.css";
+import SocialLinks from "../constants/sociallinks";
 const Footer = () => {
   return (
     <footer className={classes.Footer}>

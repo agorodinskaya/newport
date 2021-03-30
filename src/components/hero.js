@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "gatsby-image";
-import * as classes from "../../components/Hero/hero.module.css";
+import * as classes from "./hero.module.css";
 import { Link } from "gatsby";
 import { graphql, useStaticQuery } from "gatsby";
 

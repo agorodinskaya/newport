@@ -448,13 +448,15 @@ Pages
 */
 
 .projects-page,
-.main-page,
 .blog-page,
 .error-page,
 .about-page,
 .contact-page {
   background: var(--clr-grey-8);
-  min-height: calc(100vh - 5rem - 11.5rem);
+  min-height: calc(100vh - 5rem - 10.5rem);
+}
+.main-page {
+  min-height: calc(100vh - 6.5rem - 11rem);
 }
 .error-page {
   display: grid;
