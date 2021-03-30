@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   siteMetadata: {
     title: "agportfolio",
-    siteUrl: "gifted-hypatia-8dde51.netlify.app",
+    siteUrl: "https://gifted-hypatia-8dde51.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,
