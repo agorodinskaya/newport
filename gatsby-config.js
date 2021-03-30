@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "agportfolio",
+    siteUrl: [your - url],
   },
   plugins: [
     `gatsby-transformer-sharp`,
