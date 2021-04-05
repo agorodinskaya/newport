@@ -1,6 +1,7 @@
 import * as React from "react";
 import Hero from "../components/hero";
 import Layout from "../components/Layout";
+// import AllProjects from "../components/allprojects";
 import "../css/main.css";
 // markup
 const IndexPage = () => {
@@ -9,6 +10,7 @@ const IndexPage = () => {
       <div className='main-page'>
         <Hero />
       </div>
+      {/* <AllProjects /> */}
     </Layout>
   );
 };

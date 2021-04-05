@@ -1,5 +1,7 @@
 const path = require("path");
-
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 module.exports = {
   siteMetadata: {
     title: "agportfolio",
@@ -15,6 +17,13 @@ module.exports = {
       options: {
         name: `assets`,
         path: `${__dirname}/src/assets/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `udajim7ab3b7`,
+        accessToken: process.env.CONTENTFUL_API_KEY,
       },
     },
     {
