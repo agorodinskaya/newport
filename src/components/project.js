@@ -45,10 +45,6 @@ const Project = ({ projects = [] }) => {
         const { id, title, image, techTag, descr } = project;
 
         const pathToImage = getImage(image);
-
-        {
-          /* const slug = slugify(title, { lower: true }); */
-        }
         return (
           <article className='project' key={id}>
             {image && (

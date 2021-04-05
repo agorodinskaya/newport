@@ -31,6 +31,7 @@ const AllProjects = () => {
 
   return (
     <section className='section projects'>
+      <h2>Here are some of my projects:</h2>
       <Project projects={projects} />
     </section>
   );
