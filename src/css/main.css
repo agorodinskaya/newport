@@ -328,7 +328,7 @@ Pages
 
 /*
 ==============
-Projects & Tags
+Projects
 ==============
 */
 .projects h2 {
@@ -378,6 +378,27 @@ Projects & Tags
 .project-stack {
   margin-bottom: 1rem;
 }
+.project-other a {
+  color: var(--clr-grey-1);
+}
+.project-other a :hover {
+  color: var(--clr-primary-5);
+}
+.project-links span {
+  display: inline-block;
+  background: var(--clr-grey-9);
+  color: var(--clr-grey-1);
+  margin: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  font-size: 0.95rem;
+}
+.project-links span p {
+  display: inline;
+}
+
 .project-stack span,
 .about-stack span {
   display: inline-block;
@@ -436,6 +457,13 @@ Projects & Tags
     z-index: 1;
     grid-column: 6 /12;
     grid-row: 1 / 1;
+  }
+
+  .project-other a {
+    color: var(--clr-grey-1);
+  }
+  .project-other a :hover {
+    color: var(--clr-primary-5);
   }
   .project:nth-of-type(even) .project-img {
     grid-column: 5 / -1;

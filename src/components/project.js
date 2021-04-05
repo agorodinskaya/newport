@@ -68,13 +68,18 @@ const Project = ({ projects = [] }) => {
               </div>
 
               <div className='project-links'>
-                <a href={techTag.code}>
-                  <FaGithubSquare className='project-icon'></FaGithubSquare>
-                </a>
-
-                <a href={techTag.demo}>
-                  <FaGlobe className='project-icon'></FaGlobe>
-                </a>
+                <span>
+                  <p>code:</p>
+                  <a href={techTag.code}>
+                    <FaGithubSquare className='project-icon'></FaGithubSquare>
+                  </a>
+                </span>
+                <span>
+                  <p>demo:</p>
+                  <a href={techTag.demo}>
+                    <FaGlobe className='project-icon'></FaGlobe>
+                  </a>
+                </span>
               </div>
             </div>
           </article>
