@@ -7,10 +7,9 @@ import "../css/main.css";
 const IndexPage = () => {
   return (
     <Layout>
-      <div className='main-page'>
+      <section className='main-page'>
         <Hero />
-      </div>
-      {/* <AllProjects /> */}
+      </section>
     </Layout>
   );
 };

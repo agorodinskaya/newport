@@ -22,25 +22,26 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`${showLinks} ? (${classes.navLinks} ${classes.ShowLinks}) : ${classes.navLinks}`}
+          className={
+            showLinks
+              ? `${classes.navLinks} ${classes.showLinks}`
+              : `${classes.navLinks}`
+          }
         >
-          <ul className={classes.navLinks}>
-            {links.map((link) => {
-              const { id, url, text } = link;
-              return (
-                <li key={id}>
-                  <Link
-                    className={classes.Anchor}
-                    activeClassName={classes.Active}
-                    to={url}
-                    onClick={() => setShowLinks(false)}
-                  >
-                    {text}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+          {links.map((link) => {
+            const { id, url, text } = link;
+            return (
+              <Link
+                key={id}
+                className={classes.Anchor}
+                activeClassName={classes.Active}
+                to={url}
+                onClick={() => setShowLinks(false)}
+              >
+                {text}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </nav>

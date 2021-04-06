@@ -5,7 +5,6 @@ Hero
 */
 /* underline added to globals */
 .Hero {
-  margin-top: 2.2rem;
   padding-top: 10rem;
   height: 73.5vh;
   background: var(--clr-grey-8);

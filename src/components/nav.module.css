@@ -1,3 +1,8 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .navCenter {
   width: 90vw;
   max-width: 1170px;
@@ -23,6 +28,7 @@
   color: var(--clr-primary-2);
 }
 .navLinks {
+  height: 0;
   overflow: hidden;
   font-family: var(--ff-primary);
 }
@@ -32,15 +38,16 @@
 .Logo .Two {
   color: var(--clr-primary-5);
 }
-.ShowLinks {
-  height: 23.9375rem;
+.showLinks {
+  height: 15rem;
+  font-family: var(--ff-primary);
 }
 .Anchor {
   display: block;
   text-align: center;
   font-size: 1.5rem;
   text-transform: capitalize;
-  color: var(--clr-grey-2);
+  color: black;
   letter-spacing: var(--spacing);
   padding: 1rem 0;
   border-top: 1px solid var(--grey-1);
@@ -63,13 +70,14 @@
   .navLinks {
     display: flex;
     justify-content: flex-end;
-    /* max-width: 1170px; */
-    /* margin: 0 auto;
-    justify-content: space-between; */
-    /* padding: 1rem; */
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 4rem;
+    height: fit-content;
   }
-  .navLinks li {
-    margin-right: 2rem;
+  .navLinks .Anchor {
+    margin-right: 8rem;
   }
   .navLinks {
     text-transform: capitalize;

@@ -69,16 +69,16 @@ const Project = ({ projects = [] }) => {
 
               <div className='project-links'>
                 <span>
-                  <p>code:</p>
+                  <p>code </p>
                   <a href={techTag.code}>
                     <FaGithubSquare className='project-icon'></FaGithubSquare>
                   </a>
                 </span>
                 <span>
-                  <p>demo:</p>
                   <a href={techTag.demo}>
                     <FaGlobe className='project-icon'></FaGlobe>
                   </a>
+                  <p>demo</p>
                 </span>
               </div>
             </div>
