@@ -65,7 +65,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    /* margin: 1.5rem 8rem; */
+    margin: 0.5rem 10rem;
     /* padding-bottom: 1rem; */
   }
   .toggleBtn {
@@ -79,6 +79,7 @@
     justify-content: space-between;
     padding: 4rem;
     height: fit-content;
+    margin-left: 20rem;
   }
   .navLinks .Anchor {
     margin-right: 8rem;
