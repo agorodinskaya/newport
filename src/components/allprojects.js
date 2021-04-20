@@ -56,12 +56,12 @@ const AllProjects = () => {
               Lovely-bookkeeper
             </h3>
           </a>
-          <a href='https://github.com/agorodinskaya/ecom'>
+          <a href='https://github.com/agorodinskaya/quizer'>
             <h3>
-              <span role='img' aria-label='hapy-face'>
+              <span role='img' aria-label='happy-face'>
                 🥳
               </span>
-              e-commerce website
+              quizer
             </h3>
           </a>
         </div>
